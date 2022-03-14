@@ -28,5 +28,8 @@ public class Main {
         alb1.aggiungiChiave(6);
 
         System.out.println(alb1);
+
+        System.out.println(alb1.cercaChiave(6));
+        System.out.println(alb1.cercaChiave(11));
     }
 }
