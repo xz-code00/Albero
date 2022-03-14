@@ -20,7 +20,7 @@ public class Main {
         Albero alb1 = new Albero();
 
         alb1.aggiungiChiave(5);
-        alb1.aggiungiChiave(9);
+        alb1.aggiungiChiave(10);
         alb1.aggiungiChiave(3);
 
         System.out.println(alb1);

@@ -12,13 +12,12 @@ public class Albero{
             return new Nodo (valore);
         }
 
-        if (valore < nodo.valore)
+        if (valore <= nodo.valore)
             nodo.sinistro = aggiungiChiave(nodo.sinistro, valore);
         else
-            if(valore > nodo.valore)
+            if(valore >= nodo.valore)
                 nodo.destro = aggiungiChiave(nodo.sinistro, valore);
 
-        else  return nodo;   //Valore già esistente
 
         return nodo;
 
