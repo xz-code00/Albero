@@ -1,9 +1,9 @@
 public class Albero{
 
-    private Nodo radice;
+    private Nodo root;
 
     public Albero(){
-        radice = null;
+        root = null;
     }
 
 
@@ -25,7 +25,7 @@ public class Albero{
     }
 
     public void aggiungiChiave(int valore){
-        radice = aggiungiChiave(radice, valore);
+        root = aggiungiChiave(root, valore);
     }
 
     //Stampa le chiavi
@@ -36,6 +36,6 @@ public class Albero{
     }
 
     public String toString() {
-        return toString(radice);
+        return toString(root);
     }
 }
