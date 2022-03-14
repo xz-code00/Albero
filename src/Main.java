@@ -20,8 +20,12 @@ public class Main {
         Albero alb1 = new Albero();
 
         alb1.aggiungiChiave(5);
-        alb1.aggiungiChiave(10);
         alb1.aggiungiChiave(3);
+        alb1.aggiungiChiave(7);
+        alb1.aggiungiChiave(1);
+        alb1.aggiungiChiave(4);
+        alb1.aggiungiChiave(10);
+        alb1.aggiungiChiave(6);
 
         System.out.println(alb1);
     }
