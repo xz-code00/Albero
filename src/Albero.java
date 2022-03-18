@@ -126,5 +126,17 @@ public class Albero{
         return contaK(k, root);
     }
 
+    //Calcolare l'altezza
+    private int calcolaAltezza(Nodo p) {
+        if (p == null)
+            return 0;
+        else if (calcolaAltezza(p.getSinistro()) > calcolaAltezza(p.getDestro()))
+            return 1 + calcolaAltezza(p.getSinistro());
+        else
+            return 1 + calcolaAltezza(p.getDestro());
+    }
 
+    public int calcolaAltezza(){
+        return calcolaAltezza(root);
+    }
 }

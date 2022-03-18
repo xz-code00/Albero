@@ -43,5 +43,7 @@ public class Main {
         System.out.println(alb1.contaFoglie());
 
         System.out.println(alb1.contak(3));
+
+        System.out.println(alb1.calcolaAltezza());
     }
 }
