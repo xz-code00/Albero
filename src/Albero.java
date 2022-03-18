@@ -112,4 +112,19 @@ public class Albero{
         return contaFoglie(root);
     }
 
+    //Contare i nodi al livello K
+    private int contaK(int k, Nodo p) {
+        if (p == null)
+            return 0;
+        else if (k == 0)
+            return 1;
+        else
+            return contaK(k - 1, p.getSinistro()) + contaK(k - 1, p.getDestro());
+    }
+
+    public int contak(int k){
+        return contaK(k, root);
+    }
+
+
 }
