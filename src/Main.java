@@ -8,7 +8,9 @@
 -Contare le foglie di un albero binario;
 -Inserire una chiave in un albero binario di ricerca;
 -Dato K e N, contare i nodi di livello K;
--Calcolare l'altezza di un albero binario.
+-Calcolare l'altezza di un albero binario;
+-Cancellazione di un nodo;
+-Realizzare la stampa indentata.
  */
 
 
