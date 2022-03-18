@@ -7,7 +7,7 @@
 -Verificare se tutte le chiavi di un albero binario sono pari;          |
 -Contare le foglie di un albero binario;                                |
 -Inserire una chiave in un albero binario di ricerca;                   |
--Dato K e N, contare i nodi di livello K;
+-Dato K e N, contare i nodi di livello K;                               |
 -Calcolare l'altezza di un albero binario;
 -Cancellazione di un nodo;
 -Realizzare la stampa indentata.
@@ -41,5 +41,7 @@ public class Main {
         System.out.println(alb1.verificaSeTuttePari());
 
         System.out.println(alb1.contaFoglie());
+
+        System.out.println(alb1.contak(3));
     }
 }
