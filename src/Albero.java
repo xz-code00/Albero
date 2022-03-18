@@ -94,4 +94,22 @@ public class Albero{
 
         return verificaSeTuttePari(root);
     }
+
+    //Contare le foglie
+    private int contaFoglie(Nodo p){
+
+        if (p == null)
+            return 0;
+
+        else
+            if (p.getDestro() == null && p.getSinistro() == null)
+                return 1;
+
+        return contaFoglie(p.getSinistro()) + contaFoglie(p.getDestro());
+    }
+
+    public int contaFoglie(){
+        return contaFoglie(root);
+    }
+
 }

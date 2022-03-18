@@ -1,10 +1,10 @@
 /*
--Stampare ordinatamente le chiavi di un albero binario;
+-Stampare ordinatamente le chiavi di un albero binario;                 |
 -Cercare una chiave in un albero binario;
--Cercare una chiave in un albero binario di ricerca;
--Contare i nodi di un albero binario;
--Calcolare la somma delle chiavi di un albero;
--Verificare se tutte le chiavi di un albero binario sono pari;
+-Cercare una chiave in un albero binario di ricerca;                    |
+-Contare i nodi di un albero binario;                                   |
+-Calcolare la somma delle chiavi di un albero;                          |
+-Verificare se tutte le chiavi di un albero binario sono pari;          |
 -Contare le foglie di un albero binario;
 -Inserire una chiave in un albero binario di ricerca;
 -Dato K e N, contare i nodi di livello K;
@@ -39,5 +39,7 @@ public class Main {
         System.out.println(alb1.sommaChiavi());
 
         System.out.println(alb1.verificaSeTuttePari());
+
+        System.out.println(alb1.contaFoglie());
     }
 }
