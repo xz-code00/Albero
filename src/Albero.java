@@ -57,4 +57,41 @@ public class Albero{
     public boolean cercaChiave(int valore){
         return cercaChiave(root, valore);
     }
+
+    //Conta nodi
+    private int contaChiavi(Nodo p){
+        if (p == null)
+            return 0;
+        return 1 + contaChiavi(p.getSinistro()) + contaChiavi(p.getDestro());
+    }
+
+    public int contaChiavi(){
+        return contaChiavi(root);
+    }
+
+    //Calcolare somma delle chiavi
+    private int sommaChiavi(Nodo p){
+        if (p == null)
+            return 0;
+        return p.getValore() + sommaChiavi(p.getDestro()) + sommaChiavi(p.getSinistro());
+    }
+
+    public int sommaChiavi(){
+        return sommaChiavi(root);
+    }
+
+
+    //Verifica se tutte pari
+    private boolean verificaSeTuttePari(Nodo p){
+        if (p == null)
+            return true;
+        return p.getValore() % 2 == 0 && verificaSeTuttePari(p.getSinistro()) && verificaSeTuttePari(p.getDestro());
+    }
+
+    public boolean verificaSeTuttePari(){
+        if (root == null)
+            return false;
+
+        return verificaSeTuttePari(root);
+    }
 }

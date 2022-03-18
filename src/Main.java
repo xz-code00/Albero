@@ -33,5 +33,11 @@ public class Main {
 
         System.out.println(alb1.cercaChiave(6));
         System.out.println(alb1.cercaChiave(11));
+
+        System.out.println(alb1.contaChiavi());
+
+        System.out.println(alb1.sommaChiavi());
+
+        System.out.println(alb1.verificaSeTuttePari());
     }
 }
