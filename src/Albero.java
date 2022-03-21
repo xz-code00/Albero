@@ -13,11 +13,11 @@ public class Albero{
             return new Nodo (valore);
         }
 
-        if (valore <= nodo.valore)
-            nodo.sinistro = aggiungiChiave(nodo.sinistro, valore);
+        if (valore <= nodo.getValore())
+            nodo.setSinistro(aggiungiChiave(nodo.getSinistro(), valore));
         else
-            if(valore >= nodo.valore)
-                nodo.destro = aggiungiChiave(nodo.destro, valore);
+        if(valore >= nodo.getValore())
+            nodo.setDestro(aggiungiChiave(nodo.getDestro(), valore));
 
 
         return nodo;
@@ -44,13 +44,13 @@ public class Albero{
     private boolean cercaChiave(Nodo p, int valore){
         if(p == null)
             return false;
-        if(p.valore == valore)
+        if(p.getValore() == valore)
             return true;
 
-        if (valore < p.valore)
-            return cercaChiave(p.sinistro, valore);
+        if (valore < p.getValore())
+            return cercaChiave(p.getSinistro(), valore);
         else
-            return cercaChiave(p.destro, valore);
+            return cercaChiave(p.getDestro(), valore);
 
     }
 
@@ -102,8 +102,8 @@ public class Albero{
             return 0;
 
         else
-            if (p.getDestro() == null && p.getSinistro() == null)
-                return 1;
+        if (p.getDestro() == null && p.getSinistro() == null)
+            return 1;
 
         return contaFoglie(p.getSinistro()) + contaFoglie(p.getDestro());
     }
@@ -129,7 +129,7 @@ public class Albero{
     //Calcolare l'altezza
     private int calcolaAltezza(Nodo p) {
         if (p == null)
-            return 0;
+            return -1;
         else if (calcolaAltezza(p.getSinistro()) > calcolaAltezza(p.getDestro()))
             return 1 + calcolaAltezza(p.getSinistro());
         else
@@ -139,4 +139,38 @@ public class Albero{
     public int calcolaAltezza(){
         return calcolaAltezza(root);
     }
+
+    /*Cancellazione di un nodo  NON FUNZIONANTE
+    private void cancellaNodo(Nodo p, int n){
+        if (p.getValore() == n)
+            p = null;
+        else {
+            cancellaNodo(p.getDestro(), n);
+            cancellaNodo(p.getSinistro(), n);
+        }
+    }
+
+    public void cancellaNodo(int n){
+        cancellaNodo(root, n);
+    }
+    */
+
+    /*Stampa indentata NON FUNZIONANTE
+    private String stampaIndentata(Nodo p, String str) {
+
+
+
+        if (p == null)
+            return str;
+        else if{
+            str += " " + p.getValore();
+            return stampaIndentata(p.getSinistro(),str);
+        }
+    }
+
+    public String stampaIndentata(){
+        String str = "";
+        return stampaIndentata(root,str);
+    }
+*/
 }

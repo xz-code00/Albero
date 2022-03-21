@@ -8,7 +8,7 @@
 -Contare le foglie di un albero binario;                                |
 -Inserire una chiave in un albero binario di ricerca;                   |
 -Dato K e N, contare i nodi di livello K;                               |
--Calcolare l'altezza di un albero binario;
+-Calcolare l'altezza di un albero binario;                              |
 -Cancellazione di un nodo;
 -Realizzare la stampa indentata.
  */
@@ -45,5 +45,10 @@ public class Main {
         System.out.println(alb1.contak(3));
 
         System.out.println(alb1.calcolaAltezza());
+
+        //alb1.cancellaNodo(7);
+        //System.out.println(alb1);
+
+        //System.out.println(alb1.stampaIndentata());
     }
 }
