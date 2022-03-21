@@ -1,8 +1,8 @@
 public class Nodo {
-    int valore;
-    Nodo sinistro, destro;
+    private int valore;
+    private Nodo sinistro, destro;
 
-    Nodo(int valore){
+    public Nodo(int valore){
         this.valore = valore;
         sinistro = null;
         destro = null;
