@@ -155,22 +155,15 @@ public class Albero{
     }
     */
 
-    /*Stampa indentata NON FUNZIONANTE
-    private String stampaIndentata(Nodo p, String str) {
-
-
-
+    //Stampa indentata
+    public String stampaBen(){
+        return stampaBen(root,"\n");
+    }
+    private String stampaBen(Nodo p, String spazio){
         if (p == null)
-            return str;
-        else if{
-            str += " " + p.getValore();
-            return stampaIndentata(p.getSinistro(),str);
-        }
+            return spazio + "*";
+        else 
+            return spazio + p + stampaBen(p.getSinistro(), spazio + "\t")
+                + stampaBen(p.getDestro(), spazio +"\t");
     }
-
-    public String stampaIndentata(){
-        String str = "";
-        return stampaIndentata(root,str);
-    }
-*/
 }
