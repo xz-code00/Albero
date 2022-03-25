@@ -49,6 +49,6 @@ public class Main {
         //alb1.cancellaNodo(7);
         //System.out.println(alb1);
 
-        ///System.out.println(alb1.stampaIndentata());
+        System.out.println(alb1.stampaIndentata());
     }
 }

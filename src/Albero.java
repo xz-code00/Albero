@@ -156,14 +156,14 @@ public class Albero{
     */
 
     //Stampa indentata
-    public String stampaBen(){
-        return stampaBen(root,"\n");
+    public String stampaIndentata(){
+        return stampaIndentata(root,"\n");
     }
-    private String stampaBen(Nodo p, String spazio){
+    private String stampaIndentata(Nodo p, String spazio){
         if (p == null)
             return spazio + "*";
         else 
-            return spazio + p + stampaBen(p.getSinistro(), spazio + "\t")
-                + stampaBen(p.getDestro(), spazio +"\t");
+            return spazio + p.getValore() + stampaIndentata(p.getSinistro(), spazio + "\t")
+                + stampaIndentata(p.getDestro(), spazio +"\t");
     }
 }
