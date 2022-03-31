@@ -10,7 +10,12 @@
 -Dato K e N, contare i nodi di livello K;                               |
 -Calcolare l'altezza di un albero binario;                              |
 -Cancellazione di un nodo;
--Realizzare la stampa indentata.
+-Realizzare la stampa indentata;
+-Realizzare un metodo che verifichi se un albero binario è di ricerca;
+-Scrivere un metodo che dato n€N, crei un albero binario perfettamente
+bilanciato con n nodi. Nelle chiavi inserire numeri interi casuali >= 1
+e <= 100. Un albero binario è perfettamente bilanciato se per ogni nodo i
+numeri dei nodi dei due sottoalberi differiscono al più di 1.
  */
 
 
